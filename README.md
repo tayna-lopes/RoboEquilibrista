@@ -26,5 +26,5 @@ O Protocolo MQTT permite o controle do BloomBot com ESP8266 NodeMCU a partir de 
 
 ###### Integrantes
 > - Bia Novais - 31951155
-> - Danilo Cicerto - 31803881
+> - Danilo Cicero - 31803881
 > - Tayná Lopes - 31865038
