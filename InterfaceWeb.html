@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>.:: BloomBot ::.</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script type='text/javascript' src='mosquitto.js'></script>
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.7.2.min.js'></script>
+<script type="text/javascript">
+</script>
+</head>
+<body>
+	<center>
+	<table border ="0" width="100%">
+		<tr>
+			<td bgcolor = "#ad057e" width="70%">
+				<center><font color =white><h1>BloomBot - Robô Equilibrista</h1></font></center>
+			</td>
+		</tr>		
+	</table>
+    
+
+<div style="color: white !important;" id="publish">
+    <br>
+	<p><input class="txt" id="pub-topic-text" hidden type="text" value="MQTTEnvia"></p>
+	<p><input class="txt" id="pub-subscribe-text" hidden  type="text" value="MQTTRecebe"></p>
+	<br>
+	
+</div>	 
+	
+<div  id="broker">
+	<b>Conexão</b><br><br>
+	<input class="but" id="connect-button" type="button" value="Conectar">
+	<input class="but" id="disconnect-button" type="button" value="Desconectar">
+</div>
+<br><br>
+<b>Ações</b><br><br>
+<input class="but" id="frente" type="button"    value="Frente">
+<input class="but" id="direita" type="button" value="Direita">
+<input class="but" id="esquerda" type="button" value="Esquerda">
+<input class="but" id="parar" type="button" value="Parar"><br><br>
+
+
+<p><b>Status do output (vindos do NodeMCU via MQTT):</b></p>
+
+<table width="100%">
+	<tr>
+		<td>
+			<div id="status_motor_esquerda"></div>
+		</td>
+		<td>
+			<div id="status_motor_direita"></div>
+		</td>
+	</tr>
+</table>
+
+<p><b>Debug / respostas do servidor:</b></p>
+<div id="debug"></div>
+	<script src="tmo.js" type="text/javascript"></script>
+</center>
+</body>
+
+<footer style="background-color: #ad057e;padding-top: 10px;color: white">
+    <center>
+    <table border ="0" width="100%">
+        <tr style="font-weight: bold"><b>Integrantes:</b> </tr><br>
+        <tr>Bia Novais</tr><br>
+        <tr>Danilo Cicero</tr><br>
+        <tr>Tayná Lopes</tr><br>		
+	</table>
+    </center>
+</footer>
+</html>
